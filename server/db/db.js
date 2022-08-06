@@ -8,7 +8,7 @@ require('dotenv').config();
 
 // }
 const connectionString = process.env.PG_CONNECTION_STRING
-const pool = new Pool({connectionString});  //pool object
+const pool = new Pool();  //pool object
 pool.connect()
   .then(() => console.log("Connected")
   )
